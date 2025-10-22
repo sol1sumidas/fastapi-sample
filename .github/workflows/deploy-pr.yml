@@ -2,9 +2,9 @@ name: deploy-pr
 
 on:
   pull_request:
-  paths:
-    - 'app/**' #app以下のディレクトリに変更があった場合を対象とする
-    - .github/workflows/deploy-pr.yml
+    paths:
+      - 'app/**' #app以下のディレクトリに変更があった場合を対象とする
+      - .github/workflows/deploy-pr.yml
 
 env:
   REGISTRY: ghcr.io
